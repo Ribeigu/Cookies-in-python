@@ -28,4 +28,4 @@ for morsel in cookie.values():
 
 #HTML da resposta
 
-print("<html><body><h1>Cookie de Gustavo Ribeiro definido com sucesso</h1></body></html>")
+print("<html><body><h1>Cookie de Gustavo Ribeiro definido com sucesso</h1><h3>Funções0</h3><p>Esse cookie salva informações como o nome do usuário, última visita, navegador e sistema operacional. O cookie tem duração de 7 dias</p></body></html>")
