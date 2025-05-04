@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's your name, Honey?</title>
+</head>
+<body>
+    <h2>Hello, {{saved_name if saved_name is not none else "Stranger"}}!</h2>
+    <a href="/delete_cookie">Delete Name cookie</a>
+    <form action="/save_name" method="POST"> <!--this means it will use the cookie in the route named save_name-->
+        <input type="text", name="name", placeholder="Your name">
+        <input type="submit" value="Save name">
+    </form>
+</body>
+</html>
