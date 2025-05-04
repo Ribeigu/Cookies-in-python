@@ -9,7 +9,7 @@ cookie = SimpleCookie(os.environ.get("HTTP_COOKIE"))
 
 #Define novos cookies
 
-lastsFor = (datetime.now(datetime.timezone.utc)+timedelta(days=7)).strftime("%a, %d-%b%Y &H:%M:%S GMT")
+lastsFor = (datetime.now(datetime.timezone.utc)+timedelta(days=7)).strftime("%a, %d-%B%Y &H:%M:%S GMT")
 cookie["user-session"]="usuario123456789"
 cookie["user-session"]["expires"]= lastsFor
 cookie["user-session"]["path"]= "/"
